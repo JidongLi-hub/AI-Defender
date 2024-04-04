@@ -1,4 +1,8 @@
-# DLSec
+# AI Defender
+深度学习模型安全评测平台
+
+## app使用方法
+在原始conda环境下，进入本目录，执行`python app.py`
 
 ## 测试方法
 
@@ -28,7 +32,6 @@
 * VNIFGSM: Variance-tuned Nesterov Iterative FGSM
 * PGD: Projected Gradient Descent
 
-## app使用方法
-在原始conda环境下，进入本目录，执行`python app.py`
+
 
 
