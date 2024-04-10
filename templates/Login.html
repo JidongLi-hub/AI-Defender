@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Layout</title>
+    <link type="text/css" href="../static/Login.css" rel="stylesheet">
+    <script src="../static/Login.js"></script>
+</head>
+
+<body>
+    <!--对于Login页面中部的页面定义-->
+    <div class="middle" id="middle">
+        <div class="middle_login" id="middle_login">
+            <div class="login" id="login">
+                <div id="text_login">
+                    <p>登陆</p>
+                </div>
+                <form id="send_message" method="post" action="/server/Login.php">
+                    <div id="input">
+                        <div id="input_username">
+                            <img src="https://www.z4a.net/images/2023/05/05/2023-05-05-16.48.58.png" alt="user"
+                                class="icon">
+                            <label>
+                                <input type="text" placeholder="请输入用户名" class="input_box" name="account"
+                                    id="input_account">
+                            </label>
+                        </div>
+                        <div id="input_password">
+                            <img src="https://www.z4a.net/images/2023/05/05/2023-05-05-18.40.08.png" alt="password"
+                                class="icon">
+                            <label>
+                                <input type="password" placeholder="请输入密码" class="input_box" name="password"
+                                    id="input_pass">
+                            </label>
+                        </div>
+                        <div id="input_code">
+                            <img src="https://www.z4a.net/images/2023/05/05/2023-05-05-18.42.52.png" alt="password"
+                                class="icon">
+                            <label>
+                                <input type="text" placeholder="请输入验证码" class="input_box" name="verification_code"
+                                    id="verification_code_input">
+                            </label>
+                            <p id="verification_code"></p>
+                        </div>
+                    </div>
+                    <div id="button_login">
+                        <button type="button" onclick="get_input()">登陆</button>
+                    </div>
+                </form>
+                <div id="link_bar">
+                    <a href="/register" id="link_two">创建帐号</a>
+                </div>
+            </div>
+            <div class="middle_picture">
+                <img src="https://img.z4a.net/images/2024/04/09/2024-04-09-2120.png" alt="background">
+            </div>
+        </div>
+    </div>
+
+    <!--对于Login页面Footer的页面定义-->
+    <div class="footer" id="footer">
+        <br />
+        <p>联系方式：上海交通大学闵行校区</p>
+        <p>lingzhong@sjtu.edu.cn</p>
+    </div>
+
+</body>
+
+</html>

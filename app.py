@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request,jsonify
+from flask import Flask, render_template, request, jsonify
 import threading
 from EvaluationConfig import *
 from EvaluationPlatformNEW import *
@@ -13,6 +13,14 @@ def go():
 app = Flask(__name__, static_url_path='/static') # 指定静态文件路径
 
 @app.route('/')
+def login():
+    return render_template('Login.html')
+
+@app.route('/register')
+def register():
+    return render_template('Register.html')
+
+@app.route('/index')
 def index():
     return render_template('index.html')
 

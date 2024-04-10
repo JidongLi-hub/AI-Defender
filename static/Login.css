@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("https://www.z4a.net/images/2023/05/08/2023-05-08-10.43.46.png");
+    background-attachment: fixed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 16vh;
+    width: 100vw;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 16vh;
+    width: 100vw;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.middle {
+    position: fixed;
+    top: 16vh;
+    bottom: 16vh;
+    height: 68vh;
+    width: 100vw;
+}
+
+.middle_picture {
+    width: 27vw;
+    height: 95%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+
+}
+
+.middle_picture img {
+    max-height: 95%;
+    height: auto;
+    max-width: 95%;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+#middle_login {
+    position: absolute;
+    background-color: white;
+    width: 55vw;
+    height: 50vh;
+    top: 9vh;
+    left: 22.5vw;
+    border-radius: 20px;
+}
+
+.login {
+    position: absolute;
+    width: 25vw;
+    height: 42vh;
+    top: 4vh;
+    right: 0%;
+}
+
+
+
+#text_login {
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    top: 0%;
+}
+
+#input {
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 16%;
+}
+
+#button_login {
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    top: 64%;
+}
+
+#link_bar {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 80%;
+}
+
+#text_login p {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+#input_username {
+    position: absolute;
+    height: 28%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    top: 4%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+#input_password {
+    position: absolute;
+    height: 28%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    top: 36%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+#input_code {
+    position: absolute;
+    height: 28%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    bottom: 4%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+.icon {
+    width: 10%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-3%, -50%);
+}
+
+#verification_code {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translate(-3%, -50%);
+    font-size: 1.2em;
+}
+
+.input_box {
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+    font-size: 1.2em;
+    border: transparent;
+    outline: none;
+}
+
+#button_login button {
+    height: 84%;
+    width: 88%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+    background: #5A8AED;
+    font-size: 1.2em;
+}
+
+#link_one {
+    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+    color: #517DE5;
+}
+
+#link_two {
+    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(-6%, -50%);
+    color: #517DE5;
+}
+
+.header img {
+    height: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+.switch_lang {
+    margin: 0;
+    height: 23%;
+    width: 7%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: translate(-20%, -20%);
+}
+
+.link_lang {
+    text-decoration: none;
+    color: #517DE5;
+}
+
+
