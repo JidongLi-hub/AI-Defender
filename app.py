@@ -5,7 +5,7 @@ from EvaluationPlatformNEW import *
 import time
 
 def wait():
-    time.sleep(4)
+    time.sleep(12)
 
 def go():
     ModelEvaluation(new_evalueation_params)
@@ -35,26 +35,7 @@ def detect():
     thread.start()
     thread.join() # 等待评测执行完成， 结果在全局变量result中
     
-    response_data = result # 需要在EvaluatePlatformNew中将结果指标保存到result中，并组织成以下格式
-    # response_data = {
-    #     "CACC": 28 ,
-    #     "ASR":  30,
-    #     "MRTA": 50,
-    #     "ACAC": 50,
-    #     "ACTC": 50,
-    #     "NTE": 50,
-    #     "ALDP": 50,
-    #     "AQT": 50,
-    #     "CCV": 50,
-    #     "CAV": 50,
-    #     "COS": 50,
-    #     "RGB": 50,
-    #     "RIC": 50,
-    #     "TSTD": 50,
-    #     "TSIZE": 50,
-    #     "CC": 50,
-    #     "final_score" : 71 
-    # }
+    response_data = result # 需要在EvaluatePlatformNew中将结果指标保存到result中，并组织成相应格式
 
     return jsonify(response_data)
 
