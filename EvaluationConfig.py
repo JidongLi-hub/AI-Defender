@@ -2,16 +2,19 @@ import torchvision.models as models
 import torch
 
 '''********** Load your model here **********'''
-# model = models.resnet50(pretrained=True)
-# model.load_state_dict(torch.load('path_to_pretrained_weights.pth'))
-# torchvision.models.ResNet(torchvision.models.resnet.BasicBlock, [2, 2, 2, 2])
-# model = torch.hub.load("chenyaofo/pytorch-cifar-models", "cifar10_shufflenetv2_x0_5", pretrained=True)
-# model = torch.hub.load("chenyaofo/pytorch-cifar-models", "cifar10_resnet20", pretrained=True)
+# 样例待测模型
 model = torch.hub.load("chenyaofo/pytorch-cifar-models", "cifar10_resnet56", pretrained=True)
-# model.load_state_dict(torch.load('./Backdoor/LocalModels/pth'))
 model.load_state_dict(torch.load('./Backdoor/checkpoints/20231229-161017-BadnetCIFAR10forDI.pth'))
 
-model.to("cuda")
+# 在这里加载自己的模型结构和模型参数
+# model = models.resnet50(pretrained=True)
+# model.load_state_dict(torch.load('path_to_pretrained_weights.pth'))
+
+gpu_num = torch.cuda.device_count()
+if gpu_num>0:
+    model.to("cuda")
+else:
+    model.to("cpu")
 FRIENDLYNOISE_config = {
     'friendly_epochs':3, #30,
     'mu': 1,

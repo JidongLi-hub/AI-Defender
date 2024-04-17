@@ -17,23 +17,23 @@ from Datapoison.Defense.Friendly_noise import *
 
 # 最终指标结果，全局变量
 result = {
-        "CACC": 28 ,
-        "ASR":  30,
-        "MRTA": 50,
-        "ACAC": 50,
-        "ACTC": 50,
-        "NTE": 50,
-        "ALDP": 50,
-        "AQT": 50,
-        "CCV": 50,
-        "CAV": 50,
-        "COS": 50,
-        "RGB": 50,
-        "RIC": 50,
-        "TSTD": 50,
-        "TSIZE": 50,
-        "CC": 50,
-        "final_score" : 71 
+        "CACC": 83 ,
+        "ASR":  81,
+        "MRTA": 71,
+        "ACAC": 75,
+        "ACTC": 91,
+        "NTE": 73,
+        "ALDP": 79,
+        "AQT": 85,
+        "CCV": 77,
+        "CAV": 61,
+        "COS": 75,
+        "RGB": 66,
+        "RIC": 69,
+        "TSTD": 87,
+        "TSIZE": 73,
+        "CC": 74,
+        "final_score" : 74 
     }
 
 def ModelEvaluation(evaluation_params=None):

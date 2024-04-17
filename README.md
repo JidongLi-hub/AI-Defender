@@ -1,37 +1,17 @@
 # AI Defender
 深度学习模型安全评测平台
 
+## 系统和环境要求
+- 系统要求
+  - Windows 10 及以上系统
+- 环境要求
+  - python 3.10
+  - 执行`pip install -rrequirments.txt`安装所需依赖
+
 ## app使用方法
-在原始conda环境下，进入本目录，执行`python app.py`
-
-## 测试方法
-
-修改**EvaluationConfig.py**内参数，主要需要修改的内容如下：
-
-1. model：在此处加载模型
-2. evaluation_params内的tag：当前模型的标签，**一定要修改**否则之后不知道结果对应的啥模型
-3. evaluation_params内的use_dataset：可更改使用的数据集，目前暂时先用torchvision内支持的模型
-
-修改好后运行**EvaluationPlatformNEW.py**，当前测试结果会合并到ModelResults.csv内
-
-
-
-## Intro
-
-
-### 对抗样本模块
-目前实现攻击算法如下：
-
-* FGSM: Fast Gradient Sign Method
-* DIFGSM: Diverse-input Iterative FGSM
-* MIFGSM: Momentum Iterative FGSM
-* NIFGSM: Nesterov-accelerated Iterative FGSM
-* SINIFGSM: Scale-invariant Nesterov-accelerated Iterative FGSM
-* TIFGSM: Translation-invariant Iterative FGSM
-* VMIFGSM: Variance-tuned Momentum Iterative FGSM
-* VNIFGSM: Variance-tuned Nesterov Iterative FGSM
-* PGD: Projected Gradient Descent
-
-
-
-
+- 默认评测
+环境配置完毕后，在当前目录，执行`python app.py`。功能主页如下图所示，点击开始测评即可开始工作。评测根据模型大小耗时1-3小时不等。评测过程中可以在后台终端看到进度和输出，最终的各项指标和模型总评会显示在前端界面上。（第一次运行可能会下载样例模型，持续数分钟，属于正常情况）
+![](https://notes.sjtu.edu.cn/uploads/upload_f788302a9e1a17fbb5ae38ac3674eef8.png)
+- 个性化评测
+  项目内置了一个样例模型用来评测，若希望评测自己的模型，则需要在`Source\EvaluationConfig.py`做修改，加载自己的模型结构和参数。
+  ![](https://notes.sjtu.edu.cn/uploads/upload_aa7905a75ba9bb066f686f317b79859d.png) 

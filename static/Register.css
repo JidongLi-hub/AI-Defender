@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("https://www.z4a.net/images/2023/05/08/2023-05-08-10.43.46.png");
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 16vh;
+    width: 100vw;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 16vh;
+    width: 100vw;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.middle {
+    position: fixed;
+    top: 16vh;
+    bottom: 16vh;
+    height: 68vh;
+    width: 100vw;
+}
+
+.middle_login {
+    position: absolute;
+    background-color: white;
+    width: 55vw;
+    height: 56vh;
+    top: 6vh;
+    left: 22.5vw;
+    border-radius: 20px;
+}
+
+.register {
+    position: absolute;
+    width: 25vw;
+    height: 56vh;
+    top: 0%;
+    right: 0%;
+}
+
+.middle_picture {
+    width: 27vw;
+    height: 95%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+.middle_picture img {
+    max-height: 95%;
+    height: auto;
+    max-width: 95%;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+
+#text_login {
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    top: 0%;
+}
+
+#input {
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    top: 16%;
+}
+
+#button_login {
+    position: absolute;
+    width: 100%;
+    height: 14%;
+    top: 81%;
+}
+
+#text_login p {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+#input_username {
+    position: absolute;
+    height: 16.4%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    top: 3%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+#input_password {
+    position: absolute;
+    height: 16.4%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    top: 22.4%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+#input_repass {
+    position: absolute;
+    height: 16.4%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    top: 41.8%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+#input_question {
+    position: absolute;
+    height: 16.4%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    bottom: 22.4%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+#input_answer {
+    position: absolute;
+    height: 16.4%;
+    width: 88%;
+    margin-right: 6%;
+    margin-left: 6%;
+    bottom: 3%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+}
+
+.icon {
+    width: 10%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(-3%, -50%);
+}
+
+.input_box {
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+    font-size: 1.2em;
+    border: transparent;
+    outline: none;
+}
+
+#button_login button {
+    height: 84%;
+    width: 88%;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkgray;
+    border-radius: 8px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+    background: #5A8AED;
+    font-size: 1.2em;
+}
+
+
+.header img {
+    height: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+}
+
+.switch_lang {
+    margin: 0;
+    height: 23%;
+    width: 7%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: translate(-20%, -20%);
+}
+
+.link_lang {
+    text-decoration: none;
+    color: #517DE5;
+}
+
+
