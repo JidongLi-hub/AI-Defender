@@ -1,18 +1,18 @@
 from flask import Flask, render_template, request, jsonify
 import threading
 from EvaluationConfig import *
-from EvaluationPlatformNEW import *
+from EvaluationPlatformNEW import ModelEvaluation, get_result
 import time
 
 def wait():
-    time.sleep(12)
+    time.sleep(8)
 
 def go():
     ModelEvaluation(new_evalueation_params)
 
 app = Flask(__name__, static_url_path='/static') # 指定静态文件路径
 
-@app.route('/')
+@app.route('/login')
 def login():
     return render_template('Login.html')
 
@@ -20,7 +20,7 @@ def login():
 def register():
     return render_template('Register.html')
 
-@app.route('/index')
+@app.route('/')
 def index():
     return render_template('index.html')
 
@@ -34,8 +34,8 @@ def detect():
     thread = threading.Thread(target=go) # 调用评测函数
     thread.start()
     thread.join() # 等待评测执行完成， 结果在全局变量result中
-    
-    response_data = result # 需要在EvaluatePlatformNew中将结果指标保存到result中，并组织成相应格式
+    response_data = get_result() # 需要在EvaluatePlatformNew中将结果指标保存到result中，并组织成相应格式
+    print(response_data)
 
     return jsonify(response_data)
 

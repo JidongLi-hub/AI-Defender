@@ -1,0 +1,6 @@
+/data/
+/Datapoison/Friendly_noise/noise_data/*.npy
+__pycache__
+*.pyc
+*.rdb
+.idea/

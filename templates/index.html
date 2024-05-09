@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="title">
-    <img src="{{ url_for('static', filename='logo.png') }}" id="logo" style="width: 50px;height: 50px;" alt="logo">
+    <img src="{{ url_for('static', filename='logo4.png') }}" id="logo" style="width: 50px;height: 50px;" alt="logo">
     <p id="logo_name">深度学习模型安全性检测</p>
   </div>
   <div class="top-container">
@@ -95,52 +95,52 @@
           <th>结果</th>
         </tr>
         <tr>
-          <td>CACC</td>
-          <td class="value" id="CACC">--</td>
-          <td>ASR</td>
-          <td class="value" id="ASR">--</td>
-        </tr>
-        <tr>
-          <td>MR<sub>TA</sub></td>
-          <td class="value" id="MRTA">--</td>
           <td>ACAC</td>
           <td class="value" id="ACAC">--</td>
-        </tr>
-        <tr>
           <td>ACTC</td>
           <td class="value" id="ACTC">--</td>
-          <td>NTE</td>
-          <td class="value" id="NTE">--</td>
         </tr>
         <tr>
           <td>ALD<sub>p</sub></td>
-          <td class="value" id="ALD">--</td>
+          <td class="value" id="ALDP">--</td>
           <td>AQT</td>
           <td class="value" id="AQT">--</td>
         </tr>
         <tr>
-          <td>CCV</td>
-          <td class="value" id="CCV">--</td>
+          <td>ASR</td>
+          <td class="value" id="ASR">--</td>
+          <td>CACC</td>
+          <td class="value" id="CACC">--</td>
+        </tr>
+        <tr>
           <td>CAV</td>
           <td class="value" id="CAV">--</td>
+          <td>CC</td>
+          <td class="value" id="CC">--</td>
         </tr>
         <tr>
+          <td>CCV</td>
+          <td class="value" id="CCV">--</td>
           <td>COS</td>
           <td class="value" id="COS">--</td>
-          <td>RGB</td>
-          <td class="value" id="RGB">--</td>
         </tr>
         <tr>
+          <td>MR<sub>TA</sub></td>
+          <td class="value" id="MRTA">--</td>
+          <td>NTE</td>
+          <td class="value" id="NTE">--</td>
+        </tr>
+        <tr>
+          <td>RGB</td>
+          <td class="value" id="RGB">--</td>
           <td>RIC</td>
           <td class="value" id="RIC">--</td>
-          <td>T<sub>std</sub></td>
-          <td class="value" id="TSTD">--</td>
         </tr>
         <tr>
           <td>T<sub>size</sub></td>
           <td class="value" id="TSIZE">--</td>
-          <td>CC</td>
-          <td class="value" id="CC">--</td>
+          <td>T<sub>std</sub></td>
+          <td class="value" id="TSTD">--</td>
         </tr>
       </table>
     <button id="report" onclick="report()">生成模型评测报告</button>

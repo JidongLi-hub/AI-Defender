@@ -286,10 +286,4 @@ def process_result(tag="DefaultTag", adversarial_rst=None, backdoor_rst=None, da
 
 def get_result():
     global result
-    return round_dict_values(result)
-
-def round_dict_values(dictionary): # 将result指标四舍五入为整数
-    rounded_dict = {}
-    for key, value in dictionary.items():
-        rounded_dict[key] = round(value)
-    return rounded_dict
+    return result
